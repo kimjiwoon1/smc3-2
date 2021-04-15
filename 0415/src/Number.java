@@ -4,20 +4,20 @@ public class Number {
  
     public static void main(String[] args) {
         /**
-         * Áßº¹µÇÁö ¾Ê´Â
-         * Random ¼ö »ı¼º1
+         * ì¤‘ë³µë˜ì§€ ì•ŠëŠ”
+         * Random ìˆ˜ ìƒì„±1
          */
         Random rnd = new Random();
         
-        rnd.setSeed(System.currentTimeMillis()); // ½Ãµå°ªÀ» ¼³Á¤ÇÏ¿© »ı¼º
+        rnd.setSeed(System.currentTimeMillis()); // ì‹œë“œê°’ì„ ì„¤ì •í•˜ì—¬ ìƒì„±
  
         for (int i = 0; i < 10; i++) {
             System.out.print(rnd.nextInt(100) + 1 + " ");
         }
         
         /**
-         * Áßº¹µÇÁö ¾Ê´Â
-         * Random ¼ö »ı¼º2
+         * ì¤‘ë³µë˜ì§€ ì•ŠëŠ”
+         * Random ìˆ˜ ìƒì„±2
          */
         int randomNum[] = new int[10];
         
@@ -25,7 +25,7 @@ public class Number {
             randomNum[i] = (int)(Math.random() * 100 + 1);
             for ( int j = 0; j < i; j++ ){
                 if( randomNum[i] == randomNum[j] ){
-                    // °°Àº ¼ö°¡ Á¸ÀçÇÑ´Ù¸é ´Ù½Ã ·£´ı ¼ö »ı¼º
+                    // ê°™ì€ ìˆ˜ê°€ ì¡´ì¬í•œë‹¤ë©´ ë‹¤ì‹œ ëœë¤ ìˆ˜ ìƒì„±
                     i--;
                 }
             }
@@ -33,4 +33,5 @@ public class Number {
     }
  
 }
+//1234
 
